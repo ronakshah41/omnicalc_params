@@ -2,7 +2,7 @@
 
 <h5> APR</h5>
 
-<p> <%= @rate.round(2) %>% </p>
+<p> <%= number_to_percentage(@rate, precision: 4) %>% </p>
 
 <h5> Number of years</h5>
 

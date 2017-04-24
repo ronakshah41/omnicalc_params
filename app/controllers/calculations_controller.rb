@@ -41,7 +41,7 @@ class CalculationsController <ApplicationController
   end
 
   def square
-    @user_number = params[:user_number].to_i
+    @user_number = params[:user_number].to_f
     @square = @user_number** 2
     render("/calculations/square.html.erb")
   end
@@ -51,7 +51,7 @@ class CalculationsController <ApplicationController
   end
 
   def square_root
-    @user_number = params[:user_number].to_i
+    @user_number = params[:user_number].to_f
     @square = @user_number** 0.5
     render("/calculations/square_root.html.erb")
   end
